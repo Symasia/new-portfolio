@@ -26,10 +26,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div class="container mx-auto">
         <main>{children}</main>
-        <footer></footer>
-      </div>
+      <footer className="bg-black text-white flex justify-center py-3">
+        <p className="my-3">Made with ♥ by Shenesh Perera</p>
+      </footer>
     </>
   )
 }
